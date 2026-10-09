@@ -1,7 +1,7 @@
 export const siteConfig = {
-  name: "Velloria Westland Spa",
-  shortName: "Velloria",
-  tagline: "A sanctuary for your senses.",
+  name: "Nairobi Westlands Spa",
+  shortName: "Nairobi Westlands",
+  tagline: "Your sanctuary for rest and renewal.",
   whatsapp: "+254 115 980301",
   whatsappUrl: "https://wa.me/254115980301",
   address: "Stima Lane, Westlands, Nairobi",

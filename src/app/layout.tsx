@@ -3,15 +3,15 @@ import "./globals.css";
 import { LocalBusinessSchema } from "@/components/seo/LocalBusinessSchema";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://velloriawestlandspa.com"),
+  metadataBase: new URL("https://nairobiwestlandsspa.com"),
   title: {
-    default: "Velloria Westland Spa | Spa & Massage in Westlands, Nairobi",
-    template: "%s | Velloria Westland Spa",
+    default: "Nairobi Westlands Spa | Spa & Massage in Westlands, Nairobi",
+    template: "%s | Nairobi Westlands Spa",
   },
   description:
-    "Velloria Westland Spa in Westlands, Nairobi offers restorative massage, deep tissue massage, facials, body rituals, beauty treatments and personalised wellness experiences.",
+    "Nairobi Westlands Spa in Westlands, Nairobi offers restorative massage, deep tissue massage, facials, body rituals, beauty treatments and personalised wellness experiences.",
   keywords: [
-    "Velloria Westland Spa",
+    "Nairobi Westlands Spa",
     "spa in Westlands",
     "spa in Nairobi",
     "spa Kenya",
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
     "spa for tourists in Nairobi",
     "wellness experience Nairobi",
   ],
-  authors: [{ name: "Velloria Westland Spa" }],
-  creator: "Velloria Westland Spa",
-  publisher: "Velloria Westland Spa",
+  authors: [{ name: "Nairobi Westlands Spa" }],
+  creator: "Nairobi Westlands Spa",
+  publisher: "Nairobi Westlands Spa",
   formatDetection: {
     telephone: true,
     address: false,
@@ -56,8 +56,8 @@ export const metadata: Metadata = {
     ],
     type: "website",
     locale: "en_KE",
-    siteName: "Velloria Westland Spa",
-    title: "Velloria Westland Spa | Spa & Massage in Westlands, Nairobi",
+    siteName: "Nairobi Westlands Spa",
+    title: "Nairobi Westlands Spa | Spa & Massage in Westlands, Nairobi",
     description:
       "A refined spa and wellness destination in Westlands, Nairobi offering restorative massage, deep tissue massage, facials, body rituals and beauty treatments.",
   },
@@ -66,9 +66,9 @@ export const metadata: Metadata = {
     images: [
       "https://images.pexels.com/photos/36482974/pexels-photo-36482974.jpeg?auto=compress&cs=tinysrgb&w=2200",
     ],
-    title: "Velloria Westland Spa | Spa & Massage in Westlands, Nairobi",
+    title: "Nairobi Westlands Spa | Spa & Massage in Westlands, Nairobi",
     description:
-      "Spa, massage, facials, body rituals and wellness experiences at Velloria Westland Spa in Westlands, Nairobi.",
+      "Spa, massage, facials, body rituals and wellness experiences at Nairobi Westlands Spa in Westlands, Nairobi.",
   },
 };
 

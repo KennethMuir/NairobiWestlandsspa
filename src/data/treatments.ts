@@ -1,4 +1,3 @@
-import { spaPhotography } from "@/data/photography";
 
 export type TreatmentDuration = {
   label: string;
@@ -38,7 +37,7 @@ export const treatments: Treatment[] = [
       "Unhurried bodywork designed to release tension, soften the senses and leave you feeling grounded.",
     description:
       "A deeply calming massage experience created for moments when your body needs space to release. Long, flowing movements and considered pressure encourage relaxation while helping tired muscles feel lighter and more at ease.",
-    image: "https://images.pexels.com/photos/19695972/pexels-photo-19695972.jpeg",
+    image: "https://images.unsplash.com/photo-1591343395082-e120087004b4?auto=format&fit=crop&w=1200&q=80",
     durations: [
       { label: "60 min", minutes: 60, price: "On request" },
       { label: "90 min", minutes: 90, price: "On request" },
@@ -59,7 +58,7 @@ export const treatments: Treatment[] = [
       "Focused bodywork using deliberate pressure to address areas of persistent muscular tension.",
     description:
       "A more focused massage for guests seeking targeted attention on areas that carry stress and muscular tightness. Your therapist adjusts pressure and technique around your comfort throughout the treatment.",
-    image: spaPhotography.deepTissue.src,
+    image: "https://images.unsplash.com/photo-1741522509438-a120c0bb5e88?auto=format&fit=crop&w=1200&q=80",
     durations: [
       { label: "60 min", minutes: 60, price: "On request" },
       { label: "90 min", minutes: 90, price: "On request" },
@@ -80,7 +79,7 @@ export const treatments: Treatment[] = [
       "A refined facial ritual combining cleansing, nourishment and gentle touch for beautifully refreshed skin.",
     description:
       "A restorative facial experience centred around clean, comfortable and luminous-looking skin. The ritual combines thoughtful preparation with nourishing care and soothing touch for a fresh, renewed finish.",
-    image: spaPhotography.facial.src,
+    image: "https://images.unsplash.com/photo-1677091508089-2958f18244fe?auto=format&fit=crop&w=1200&q=80",
     durations: [
       { label: "60 min", minutes: 60, price: "On request" },
     ],
@@ -100,7 +99,7 @@ export const treatments: Treatment[] = [
       "A considered facial treatment created to refresh tired-looking skin and restore a sense of radiance.",
     description:
       "A gentle renewal ritual for skin that needs a little more attention. The treatment focuses on cleansing, hydration and restorative care while keeping the experience calm and unhurried.",
-    image: spaPhotography.facialClose.src,
+    image: "https://images.unsplash.com/photo-1790244338402-07bff80f80d1?auto=format&fit=crop&w=1200&q=80",
     durations: [
       { label: "60 min", minutes: 60, price: "On request" },
       { label: "90 min", minutes: 90, price: "On request" },
@@ -121,7 +120,7 @@ export const treatments: Treatment[] = [
       "An indulgent full-body ritual bringing together exfoliation, massage and deeply nourishing care.",
     description:
       "A complete body ritual designed as an invitation to slow down. Exfoliation prepares the skin, flowing massage encourages relaxation and nourishing care leaves the body feeling soft, cared for and renewed.",
-    image: "https://images.unsplash.com/photo-1701917084224-cb59235d1d69?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1200&q=80",
     durations: [
       { label: "90 min", minutes: 90, price: "On request" },
     ],
@@ -141,7 +140,7 @@ export const treatments: Treatment[] = [
       "A renewing exfoliation ritual created to leave the skin smooth, supple and beautifully refreshed.",
     description:
       "A focused body ritual centred on gentle exfoliation and nourishing aftercare. It is designed for guests looking for a fresh, polished feeling without the longer sequence of a full body ritual.",
-    image: spaPhotography.wellness.src,
+    image: "https://images.unsplash.com/photo-1709755491926-f7aa83748967?auto=format&fit=crop&w=1200&q=80",
     durations: [
       { label: "60 min", minutes: 60, price: "On request" },
     ],
@@ -161,7 +160,7 @@ export const treatments: Treatment[] = [
       "A slower experience combining calming touch and restorative moments for body and mind.",
     description:
       "A deliberately unhurried wellness experience for days when you need to step away from the noise. The ritual brings together calming bodywork and quiet restorative moments in a sequence designed around relaxation.",
-    image: spaPhotography.relaxation.src,
+    image: "https://images.unsplash.com/photo-1701916672756-615f56fb0d4e?auto=format&fit=crop&w=1200&q=80",
     durations: [
       { label: "90 min", minutes: 90, price: "On request" },
     ],
@@ -181,7 +180,7 @@ export const treatments: Treatment[] = [
       "A soothing beauty ritual giving hands and feet thoughtful care, hydration and gentle attention.",
     description:
       "A simple, restorative beauty ritual focused on two areas that often carry the day's fatigue. Gentle care, hydration and massage create a polished yet deeply relaxing finishing experience.",
-    image: spaPhotography.details.src,
+    image: "https://images.unsplash.com/photo-1749131871347-6d211039ac3e?auto=format&fit=crop&w=1200&q=80",
     durations: [
       { label: "45 min", minutes: 45, price: "On request" },
       { label: "60 min", minutes: 60, price: "On request" },
@@ -202,6 +201,9 @@ export const featuredTreatments = treatments.filter(
 export function getTreatmentBySlug(slug: string) {
   return treatments.find((treatment) => treatment.slug === slug);
 }
+
+
+
 
 
 

@@ -11,11 +11,12 @@ export const siteConfig = {
     { label: "About", href: "/about#philosophy" },
     { label: "Treatments", href: "/treatments" },
     { label: "Packages", href: "/packages" },
-    { label: "Our Team", href: "/team#featured-team" },
+    { label: "The Experts", href: "/team#featured-team" },
     { label: "Gallery", href: "/gallery" },
     { label: "Contact", href: "/contact#send-enquiry" },
   ],
 } as const;
+
 
 
 

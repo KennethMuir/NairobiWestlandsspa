@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/team" },
   title: "Spa Therapists & Wellness Team in Westlands, Nairobi",
   description:
-    "Meet the therapists behind the Velloria Westland Spa experience in Westlands, Nairobi, with different areas of focus, technique and rhythm.",
+    "Meet the therapists behind the Nairobi Westlands Spa experience in Westlands, Nairobi, with different areas of focus, technique and rhythm.",
 };
 
 export default function TeamPage() {
@@ -23,7 +23,7 @@ export default function TeamPage() {
           <div className="absolute inset-0">
             <Image
               src={homeImages.interior}
-              alt="Velloria spa interior"
+              alt="Nairobi Westlands Spa interior"
               fill
               priority
               sizes="100vw"
@@ -41,12 +41,12 @@ export default function TeamPage() {
                 </p>
 
                 <h1 className="velloria-display mt-5 max-w-4xl text-6xl leading-[0.88] sm:text-7xl lg:text-[7rem]">
-                  Meet the hands behind Velloria.
+                  Meet the hands behind Nairobi Westlands Spa.
                 </h1>
 
                 <p className="mt-8 max-w-2xl text-sm leading-7 text-white/70 sm:text-base sm:leading-8">
                   Discover the therapists who bring different areas of focus,
-                  technique and rhythm to the Velloria experience.
+                  technique and rhythm to the Nairobi Westlands Spa experience.
                 </p>
               </div>
 
@@ -65,5 +65,7 @@ export default function TeamPage() {
     </>
   );
 }
+
+
 
 

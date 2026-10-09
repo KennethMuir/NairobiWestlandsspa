@@ -6,6 +6,7 @@ export type TeamMember = {
   description: string;
   specialties: string[];
   image?: string;
+  gallery?: string[];
 };
 
 export const teamMembers = [
@@ -17,6 +18,14 @@ export const teamMembers = [
     description: "Camilla focuses on deep-tissue techniques and hot-stone work for guests seeking focused care for shoulder and lower-back tension.",
     specialties: ["Deep Tissue", "Hot Stone", "Sports"],
     image: "https://images.unsplash.com/photo-1637457252556-cab872e5af6b?auto=format&fit=crop&w=1200&q=85",
+    gallery: [
+      "https://images.unsplash.com/photo-1637457252629-d1166eec67e3?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1637457348287-cb22ff9ad461?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1642349921061-5b0c605c613f?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1637457347623-03e275806594?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1637457346052-c48189e3dd35?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1637457348673-dff5542e531b?auto=format&fit=crop&w=1200&q=85",
+    ],
   },
   {
     slug: "yoki",
@@ -55,11 +64,18 @@ export const teamMembers = [
   {
     slug: "jenny-meri",
     name: "Jenny Meri",
-    role: "Body to Body & Relaxation",
+    role: "Full Body & Relaxation",
     experience: "5 years",
     description: "Jenny focuses on warm-oil body treatments and full-body relaxation, with an unhurried approach to each session.",
-    specialties: ["Body to Body", "Full Body", "Relaxation"],
+    specialties: ["Full Body", "Relaxation"],
     image: "https://images.unsplash.com/photo-1543698557-2028583eb451?auto=format&fit=crop&w=1200&q=85",
+    gallery: [
+      "https://images.unsplash.com/photo-1543698557-5608887b68e2?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1543698522-075267da6523?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1543698523-d56bf53e0ffe?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1591765015426-f27146663ee4?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1543698523-2f85a21eb3d4?auto=format&fit=crop&w=1200&q=85",
+    ],
   },
   {
     slug: "alexandra",
@@ -69,6 +85,12 @@ export const teamMembers = [
     description: "Alexandra offers full-body sessions with an attentive pace designed around relaxation and restoration.",
     specialties: ["Full Body", "Relaxation", "Wellness"],
     image: "https://images.unsplash.com/photo-1610892075063-00e6c0dc44c3?auto=format&fit=crop&w=1200&q=85",
+    gallery: [
+      "https://images.unsplash.com/photo-1610892074968-8437c69fcc36?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1610892074937-47bf2e658625?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1610892074942-8cef2e4d638a?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1610892074832-9c11008ac7da?auto=format&fit=crop&w=1200&q=85",
+    ],
   },
   {
     slug: "kendra",
@@ -116,5 +138,3 @@ export const teamMembers = [
 export function getTeamMemberBySlug(slug: string) {
   return teamMembers.find((member) => member.slug === slug);
 }
-
-

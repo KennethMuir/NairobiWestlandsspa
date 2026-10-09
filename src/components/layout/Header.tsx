@@ -70,14 +70,14 @@ export function Header() {
                 });
               }
             }}
-            aria-label="Velloria Westland Spa home"
+            aria-label={`${siteConfig.name} home`}
           >
             <span className="velloria-display text-[2rem] font-medium leading-none tracking-wide">
-              Velloria
+              Nairobi
             </span>
 
             <span className="ml-2 hidden border-l border-white/25 pl-2 text-[8px] font-semibold uppercase tracking-[0.22em] text-white/65 sm:block">
-              Westland
+              Westlands
               <br />
               Spa
             </span>
@@ -91,7 +91,7 @@ export function Header() {
                 className={`relative py-2 text-[12px] font-medium uppercase tracking-[0.12em] transition-colors duration-300 hover:text-white ${isActive(item.href) ? "text-white" : "text-white/75"}`}
               >
                 {item.label}
-                <span className={`absolute inset-x-0 bottom-0 h-px origin-left bg-white/70 transition-transform duration-300 ${isActive(item.href) ? "scale-x-100" : "scale-x-0"}`} />
+                <span className={`absolute inset-x-0 bottom-0 h-px origin-left bg-[#C5AA78] transition-transform duration-300 ${isActive(item.href) ? "scale-x-100" : "scale-x-0"}`} />
               </Link>
             ))}
           </div>
@@ -170,7 +170,3 @@ export function Header() {
     </header>
   );
 }
-
-
-
-

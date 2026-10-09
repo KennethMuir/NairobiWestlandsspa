@@ -3,14 +3,14 @@
 @import "tailwindcss";
 
 :root {
-  --velloria-ivory: #f8f5ef;
-  --velloria-cream: #efe8dc;
-  --velloria-sand: #d9c9b5;
-  --velloria-mocha: #9a8068;
-  --velloria-espresso: #33271f;
-  --velloria-deep: #201914;
-  --velloria-white: #fffdf9;
-  --velloria-border: rgba(51, 39, 31, 0.12);
+  --velloria-ivory: #F7F5F0;
+  --velloria-cream: #DCE6F0;
+  --velloria-sand: #C7D0D9;
+  --velloria-mocha: #C5AA78;
+  --velloria-espresso: #24364B;
+  --velloria-deep: #192B43;
+  --velloria-white: #fffefa;
+  --velloria-border: rgba(25, 43, 67, 0.14);
 }
 
 * {
@@ -59,19 +59,19 @@ a {
 }
 
 .velloria-button {
-  background-color: #33271f !important;
+  background-color: var(--velloria-espresso) !important;
   color: #ffffff !important;
   border: 0 !important;
   opacity: 1 !important;
 }
 
 .velloria-button:hover {
-  background-color: #201914 !important;
+  background-color: var(--velloria-deep) !important;
   color: #ffffff !important;
 }
 
 .velloria-button:focus-visible {
-  outline: 2px solid #9a8068;
+  outline: 2px solid var(--velloria-mocha);
   outline-offset: 2px;
 }
 

@@ -9,12 +9,11 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-[1.4fr_0.8fr_0.8fr_1fr]">
           <div>
             <Link href="/" className="velloria-display text-4xl">
-              Velloria
+              {siteConfig.name}
             </Link>
 
             <p className="velloria-display mt-4 max-w-sm text-2xl leading-snug text-white/75">
-              A sanctuary for your senses, created for moments that belong
-              entirely to you.
+              {siteConfig.tagline}
             </p>
 
             <a
@@ -83,8 +82,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Velloria Westland Spa.</p>
+        <div className="mt-14 flex flex-col gap-4 border-t border-[#C7D0D9]/25 pt-6 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between">
+          <p>© {new Date().getFullYear()} {siteConfig.name}.</p>
           <p>Wellness, beauty & restoration.</p>
         </div>
 

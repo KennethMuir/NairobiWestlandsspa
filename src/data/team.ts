@@ -34,6 +34,15 @@ export const teamMembers = [
     experience: "6 years",
     description: "Yoki combines aromatherapy with a flowing Swedish massage approach to help guests unwind and settle into a slower pace.",
     specialties: ["Swedish", "Aromatherapy", "Couples"],
+      gallery: [
+        "https://images.unsplash.com/photo-1645799281063-be3fccd4b5ec?auto=format&fit=crop&w=1200&q=85",
+        "https://images.unsplash.com/photo-1616896344525-b0b2fa16d386?auto=format&fit=crop&w=1200&q=85",
+        "https://images.unsplash.com/photo-1645799279651-cac3e7af84b2?auto=format&fit=crop&w=1200&q=85",
+        "https://images.unsplash.com/photo-1688136729081-932f76be65c7?auto=format&fit=crop&w=1200&q=85",
+        "https://images.unsplash.com/photo-1688136729503-ef81c256dd0b?auto=format&fit=crop&w=1200&q=85",
+        "https://images.unsplash.com/photo-1645799018539-dfa08aa97005?auto=format&fit=crop&w=1200&q=85",
+        "https://images.unsplash.com/photo-1645799018510-50af6655ba18?auto=format&fit=crop&w=1200&q=85",
+      ],
     image: "https://images.unsplash.com/photo-1645799279716-00068f7c9764?auto=format&fit=crop&w=1200&q=85",
   },
   {
@@ -107,6 +116,13 @@ export const teamMembers = [
     experience: "6 years",
     description: "Lia Lia focuses on firm deep-tissue techniques and post-travel recovery for guests who prefer a more targeted massage.",
     specialties: ["Deep Tissue", "Sports", "Back & Neck"],
+    gallery: [
+      "https://images.unsplash.com/photo-1684598273456-b8de826418c9?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1684598273432-8f8e882cd16f?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1684598273539-b893a21517e2?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1684598273510-1ac580fc3bb7?auto=format&fit=crop&w=1200&q=85",
+      "https://images.unsplash.com/photo-1684598273412-04e8dfc9276d?auto=format&fit=crop&w=1200&q=85",
+    ],
     image: "https://images.unsplash.com/photo-1684598273898-e831ed1b9119?auto=format&fit=crop&w=1200&q=85",
   },
   {

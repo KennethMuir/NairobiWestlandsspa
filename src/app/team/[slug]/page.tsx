@@ -159,6 +159,98 @@ export default async function ExpertProfilePage({
           </section>
         )}
 
+        {member.slug === "yoki" && (
+          <section className="velloria-section bg-white">
+            <Container>
+              <div className="max-w-3xl">
+                <p className="velloria-eyebrow mb-4">A little about me</p>
+                <h2 className="velloria-display text-4xl leading-tight text-[#192B43] sm:text-5xl">
+                  Let&apos;s make a little room for you.
+                </h2>
+
+                <div className="mt-8 space-y-6 text-base leading-8 text-[#526174]">
+                  <p>
+                    You know those days when you&apos;ve been doing so much
+                    for everyone else that you almost forget what it feels
+                    like to do something for yourself? Those are the days
+                    I wish I could invite you in for a little while, take
+                    the weight off your shoulders, and remind you that you
+                    deserve to be cared for, too.
+                  </p>
+
+                  <p>
+                    I&apos;ve spent the past six years learning the art of
+                    helping people slow down, and honestly, one of my
+                    favourite things about this work is that no two people
+                    are ever quite the same. Some guests come in ready to
+                    talk about their day; others get comfortable and are
+                    perfectly happy to enjoy the quiet. I love that. You
+                    don&apos;t have to be a certain kind of person with me.
+                    You can simply be yourself.
+                  </p>
+
+                  <p>
+                    Swedish massage is one of my favourite ways to help the
+                    body unwind, especially when everyday life has left
+                    you feeling tense or worn out. I also love working
+                    with aromatherapy because the right scent can change
+                    the feeling of a space. Add soft music and a few
+                    moments of stillness, and you have a chance to step
+                    away from the world for a while.
+                  </p>
+
+                  <p>
+                    And if you&apos;re coming with your partner, I think
+                    that&apos;s lovely, too. Life gets busy, doesn&apos;t
+                    it? Between work, responsibilities, and all the little
+                    things that demand our attention, it&apos;s easy to
+                    forget to make time for each other. A couples&apos;
+                    session gives you a chance to put everything else
+                    aside and simply enjoy being together.
+                  </p>
+
+                  <p>
+                    Before we begin, I&apos;ll always want to know what
+                    feels comfortable for you. Do you prefer gentle
+                    pressure or something firmer? Is there a particular
+                    scent you love? Would you rather chat a little or
+                    enjoy some peaceful quiet? Tell me what you like.
+                    And if you&apos;re not quite sure yet, that&apos;s
+                    absolutely fine. We can figure it out together.
+                  </p>
+
+                  <p>
+                    For me, the best part is seeing someone leave looking
+                    a little more relaxed than when they arrived. I don&apos;t
+                    expect you to walk out as a completely different
+                    person. I just hope you leave feeling that, for a
+                    little while, you were able to put everything down.
+                  </p>
+
+                  <p>
+                    So, whenever you&apos;re ready, come say hello.
+                    We&apos;ll take it from there.
+                  </p>
+                </div>
+
+                <p className="velloria-display mt-8 text-2xl leading-relaxed text-[#192B43] sm:text-3xl">
+                  And don&apos;t worry — you don&apos;t have to know how
+                  to relax before you get here. That&apos;s what I&apos;m
+                  here for.
+                </p>
+
+                <Link
+                  href={`/book?expert=${member.slug}`}
+                  className="mt-8 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#C5AA78] px-6 py-3 text-sm font-semibold text-[#192B43] transition-colors hover:bg-[#D8C49E]"
+                >
+                  Come and see me
+                  <ArrowUpRight size={16} />
+                </Link>
+              </div>
+            </Container>
+          </section>
+        )}
+
         <section className="velloria-section">
           <Container>
             <div className="grid gap-12 lg:grid-cols-[1fr_0.8fr] lg:gap-20">

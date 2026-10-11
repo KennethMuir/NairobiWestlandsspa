@@ -152,12 +152,12 @@ export const pagePhotography = {
     src: "https://images.pexels.com/photos/32306099/pexels-photo-32306099.jpeg",
     alt: "Black woman receiving massage therapy",
   },  treatmentsHero: {
-    src: "https://images.unsplash.com/photo-1663117159267-85a5828d7f79?auto=format&fit=crop&w=2200&q=85",
-    alt: "Woman with a braid in a close portrait",
+    src: "https://images.pexels.com/photos/6187267/pexels-photo-6187267.jpeg?auto=compress&cs=tinysrgb&w=2400",
+    alt: "Spa treatment scene from the selected Pexels photograph",
   },
   packagesHero: {
-    src: "https://images.unsplash.com/photo-1739770520092-ec01e125cdc8?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
-    alt: "A woman in a white top leaning on a rail",
+    src: "https://images.unsplash.com/photo-1636717970103-da4e0e875c95?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=85&w=2400",
+    alt: "Bedroom with a bed, mirror and plant",
   },
 
   home: {
@@ -228,8 +228,8 @@ massage: {
   },
 about: {
     hero: {
-      src: "https://images.unsplash.com/photo-1684140683588-cdf3bcbc5a56?auto=format&fit=crop&w=2200&q=85",
-      alt: "Black woman in a black dress lying on a bed",
+      src: "https://images.unsplash.com/photo-1723109438209-2f6402e08c7c?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=85&w=2400",
+      alt: "Woman reclining on a bed in a softly styled setting",
     },
   },
 packages: {
@@ -344,6 +344,7 @@ packages: {
     hero: SpaPhotography;
   };
 };
+
 
 
 

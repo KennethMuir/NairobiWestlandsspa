@@ -17,12 +17,12 @@ export function TreatmentsPreview() {
           eyebrow="Treatments"
           title={
             <>
-              Care for the body.
+              Choose the care
               <br />
-              Calm for the mind.
+              you need today.
             </>
           }
-          description="Explore rituals created to restore, renew and leave you feeling beautifully looked after."
+          description="Discover considered treatments for easing tension, refreshing your skin and making space for yourself."
         />
 
         <div className="mt-12 grid gap-4 md:grid-cols-3">
@@ -41,7 +41,7 @@ export function TreatmentsPreview() {
                   alt={treatment.title}
                   fill
                   sizes="(min-width: 768px) 33vw, 100vw"
-                  className="object-contain transition-transform duration-700 group-hover:scale-[1.02]"
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
 
                 <span className="absolute left-6 top-6 text-xs font-semibold tracking-[0.16em] text-white/80">
@@ -70,7 +70,7 @@ export function TreatmentsPreview() {
                   href="/treatments"
                   className="mt-7 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[var(--velloria-deep)]"
                 >
-                  Explore treatment
+                  Discover treatment
                   <ArrowUpRight
                     size={14}
                     className="transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
@@ -83,7 +83,7 @@ export function TreatmentsPreview() {
 
         <div className="mt-8 flex justify-center md:justify-end">
           <Button href="/treatments">
-            <span>View all treatments</span>
+            <span>Explore all treatments</span>
             <ArrowUpRight
               size={16}
               strokeWidth={2}
@@ -95,6 +95,8 @@ export function TreatmentsPreview() {
     </section>
   );
 }
+
+
 
 
 

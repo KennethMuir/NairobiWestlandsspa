@@ -74,7 +74,7 @@ export const treatments: Treatment[] = [
     slug: "velloria-glow-facial",
     number: "03",
     category: "Facials",
-    title: "Velloria Glow",
+    title: "Glow Renewal",
     shortDescription:
       "A refined facial ritual combining cleansing, nourishment and gentle touch for beautifully refreshed skin.",
     description:

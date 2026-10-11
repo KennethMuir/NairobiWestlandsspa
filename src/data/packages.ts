@@ -37,7 +37,7 @@ export const packages: SpaPackage[] = [
     inclusions: [
       "Welcome ritual",
       "Restorative Massage",
-      "Velloria Glow facial",
+      "Glow Renewal facial",
       "Restorative tea",
     ],
     featured: true,
@@ -76,7 +76,7 @@ export const packages: SpaPackage[] = [
     treatmentSlugs: ["velloria-glow-facial", "restorative-massage"],
     inclusions: [
       "Welcome ritual",
-      "Velloria Glow facial",
+      "Glow Renewal facial",
       "Restorative Massage",
       "Hands & Feet finishing ritual",
     ],
@@ -86,11 +86,11 @@ export const packages: SpaPackage[] = [
     slug: "velloria-day-retreat",
     number: "04",
     category: "Wellness Journeys",
-    title: "The Velloria Day Retreat",
+    title: "The Westlands Day Retreat",
     shortDescription:
       "A fuller day of restoration bringing together bodywork, facial care, body ritual and peaceful restorative pauses.",
     description:
-      "The Velloria Day Retreat is an extended invitation to disconnect from the day's demands. A carefully paced sequence of treatments gives you time for bodywork, facial care and nourishing body rituals, with quiet space between experiences so the day never feels rushed.",
+      "The Westlands Day Retreat is an extended invitation to disconnect from the day's demands. A carefully paced sequence of treatments gives you time for bodywork, facial care and nourishing body rituals, with quiet space between experiences so the day never feels rushed.",
     image: pagePhotography.packages.velloriaDayRetreat.src,
     duration: "Approx. 4.5 hours",
     treatmentSlugs: [
@@ -102,7 +102,7 @@ export const packages: SpaPackage[] = [
     inclusions: [
       "Welcome ritual",
       "Restorative Massage",
-      "Velloria Glow facial",
+      "Glow Renewal facial",
       "Silk & Stone body ritual",
       "Hands & Feet finishing ritual",
       "Restorative tea",

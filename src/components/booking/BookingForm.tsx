@@ -121,7 +121,7 @@ export function BookingForm({ initialSelection }: BookingFormProps) {
     const title = selected.title;
 
     const message = [
-      "Hello Velloria Westland Spa,",
+      "Hello Nairobi Westlands Spa,",
       "",
       "I would like to make a booking enquiry.",
       "",
@@ -194,7 +194,7 @@ export function BookingForm({ initialSelection }: BookingFormProps) {
               <p className="text-sm font-semibold">WhatsApp confirmation</p>
               <p className="mt-1 text-xs leading-5 text-white/50">
                 Your enquiry opens directly in a WhatsApp conversation with
-                Velloria.
+                our spa.
               </p>
             </div>
           </div>
@@ -384,7 +384,7 @@ export function BookingForm({ initialSelection }: BookingFormProps) {
               className="rounded-2xl border border-[#9a8068]/30 bg-[#efe8dc] px-4 py-3 text-sm leading-6 text-[#33271f]"
             >
               Your booking message has been prepared in WhatsApp. Please send
-              it there so the Velloria team can respond with availability.
+              it there so the our spa team can respond with availability.
             </div>
           ) : null}
 

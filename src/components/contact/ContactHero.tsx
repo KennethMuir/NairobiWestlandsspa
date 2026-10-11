@@ -7,15 +7,15 @@ import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import { contactPage } from "@/data/contact";
-import { pagePhotography } from "@/data/photography";
 import { siteConfig } from "@/data/site";
+import { pagePhotography } from "@/data/photography";
 
 export function ContactHero() {
   return (
     <section className="relative flex min-h-[78vh] items-end overflow-hidden bg-[var(--velloria-deep)] text-white sm:min-h-[82vh]">
       <Image
         src={pagePhotography.contact.hero.src}
-        alt="Velloria spa atmosphere"
+        alt="our spa spa atmosphere"
         fill
         priority
         sizes="100vw"
@@ -62,7 +62,7 @@ export function ContactHero() {
               <ArrowUpRight size={16} strokeWidth={1.7} />
             </Button>
 
-            <WhatsAppButton label="WhatsApp Velloria" />
+            <WhatsAppButton label="WhatsApp us" />
           </div>
         </motion.div>
 
@@ -79,6 +79,7 @@ export function ContactHero() {
     </section>
   );
 }
+
 
 
 

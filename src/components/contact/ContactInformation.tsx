@@ -8,6 +8,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
@@ -36,6 +37,16 @@ export function ContactInformation() {
             <p className="mt-7 max-w-xl text-sm leading-7 text-[#77675a] sm:text-base sm:leading-8">
               {contactPage.introduction.description}
             </p>
+
+            <div className="relative mt-8 aspect-[5/3] overflow-hidden rounded-[2rem]">
+              <Image
+                src="https://plus.unsplash.com/premium_photo-1683140669232-088e0e47a4a4?auto=format&fit=crop&w=1400&q=85"
+                alt="A woman relaxing in a white bathrobe during a spa wellness experience"
+                fill
+                sizes="(max-width: 1024px) 100vw, 40vw"
+                className="object-cover"
+              />
+            </div>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Button href="/book">
@@ -76,7 +87,7 @@ export function ContactInformation() {
                 </span>
 
                 <p className="mt-8 text-[10px] font-semibold uppercase tracking-[0.18em] text-white/45">
-                  Find Velloria
+                  Find us
                 </p>
 
                 <div className="mt-2 flex items-end justify-between gap-5">

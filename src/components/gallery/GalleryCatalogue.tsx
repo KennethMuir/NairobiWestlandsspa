@@ -31,44 +31,28 @@ export function GalleryCatalogue() {
     activeIndex === null ? null : filteredItems[activeIndex] ?? null;
 
   useEffect(() => {
-    if (activeIndex === null) {
-      return;
-    }
+    if (activeIndex === null) return;
 
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
-        setActiveIndex(null);
-      }
+      if (event.key === "Escape") setActiveIndex(null);
 
       if (event.key === "ArrowRight") {
-        setActiveIndex((current) => {
-          if (current === null) {
-            return current;
-          }
-
-          return (current + 1) % filteredItems.length;
-        });
+        setActiveIndex((current) =>
+          current === null ? current : (current + 1) % filteredItems.length,
+        );
       }
 
       if (event.key === "ArrowLeft") {
-        setActiveIndex((current) => {
-          if (current === null) {
-            return current;
-          }
-
-          return (
-            (current - 1 + filteredItems.length) %
-            filteredItems.length
-          );
-        });
+        setActiveIndex((current) =>
+          current === null
+            ? current
+            : (current - 1 + filteredItems.length) % filteredItems.length,
+        );
       }
     };
 
     document.addEventListener("keydown", handleKeyDown);
-
-    return () => {
-      document.removeEventListener("keydown", handleKeyDown);
-    };
+    return () => document.removeEventListener("keydown", handleKeyDown);
   }, [activeIndex, filteredItems.length]);
 
   useEffect(() => {
@@ -76,35 +60,24 @@ export function GalleryCatalogue() {
     const isOpen = activeIndex !== null;
 
     if (!wasOpen && isOpen) {
-      requestAnimationFrame(() => {
-        closeButtonRef.current?.focus();
-      });
+      requestAnimationFrame(() => closeButtonRef.current?.focus());
     }
 
     if (wasOpen && !isOpen) {
-      requestAnimationFrame(() => {
-        activeTriggerRef.current?.focus();
-      });
+      requestAnimationFrame(() => activeTriggerRef.current?.focus());
     }
 
     previousActiveIndexRef.current = activeIndex;
   }, [activeIndex]);
 
   useEffect(() => {
-    if (activeIndex === null) {
-      return;
-    }
+    if (activeIndex === null) return;
 
     const dialog = dialogRef.current;
-
-    if (!dialog) {
-      return;
-    }
+    if (!dialog) return;
 
     const handleTabKey = (event: KeyboardEvent) => {
-      if (event.key !== "Tab") {
-        return;
-      }
+      if (event.key !== "Tab") return;
 
       const focusableElements = Array.from(
         dialog.querySelectorAll<HTMLElement>(
@@ -123,20 +96,14 @@ export function GalleryCatalogue() {
       if (event.shiftKey && document.activeElement === firstElement) {
         event.preventDefault();
         lastElement.focus();
-        return;
-      }
-
-      if (!event.shiftKey && document.activeElement === lastElement) {
+      } else if (!event.shiftKey && document.activeElement === lastElement) {
         event.preventDefault();
         firstElement.focus();
       }
     };
 
     dialog.addEventListener("keydown", handleTabKey);
-
-    return () => {
-      dialog.removeEventListener("keydown", handleTabKey);
-    };
+    return () => dialog.removeEventListener("keydown", handleTabKey);
   }, [activeIndex]);
 
   function handleCategoryChange(category: string) {
@@ -145,43 +112,34 @@ export function GalleryCatalogue() {
   }
 
   function showPrevious() {
-    setActiveIndex((current) => {
-      if (current === null) {
-        return current;
-      }
-
-      return (
-        (current - 1 + filteredItems.length) %
-        filteredItems.length
-      );
-    });
+    setActiveIndex((current) =>
+      current === null
+        ? current
+        : (current - 1 + filteredItems.length) % filteredItems.length,
+    );
   }
 
   function showNext() {
-    setActiveIndex((current) => {
-      if (current === null) {
-        return current;
-      }
-
-      return (current + 1) % filteredItems.length;
-    });
+    setActiveIndex((current) =>
+      current === null ? current : (current + 1) % filteredItems.length,
+    );
   }
 
   return (
     <>
-      <section className="velloria-section bg-[#f8f5ef]">
+      <section className="velloria-section bg-[#F5F0E8]">
         <div className="velloria-container">
           <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-2xl">
-              <p className="velloria-eyebrow text-[#9a8068]">
+              <p className="velloria-eyebrow text-[#7C3AED]">
                 A visual journey
               </p>
 
-              <h2 className="velloria-display mt-5 text-5xl leading-[0.92] text-[#33271f] sm:text-6xl lg:text-7xl">
-                Inside the Velloria mood.
+              <h2 className="velloria-display mt-5 text-5xl leading-[0.92] text-[#171717] sm:text-6xl lg:text-7xl">
+                Inside the spa&apos;s atmosphere.
               </h2>
 
-              <p className="mt-6 text-sm leading-7 text-[#77675a] sm:text-base sm:leading-8">
+              <p className="mt-6 text-sm leading-7 text-[#625A54] sm:text-base sm:leading-8">
                 Explore the textures, rituals and atmosphere that shape a
                 slower kind of spa experience.
               </p>
@@ -202,8 +160,8 @@ export function GalleryCatalogue() {
                     aria-pressed={isActive}
                     className={`shrink-0 rounded-full border px-4 py-2.5 text-xs font-semibold tracking-wide transition-all duration-300 ${
                       isActive
-                        ? "border-[#33271f] bg-[#33271f] text-white"
-                        : "border-[#33271f]/15 bg-transparent text-[#77675a] hover:border-[#33271f]/35 hover:text-[#33271f]"
+                        ? "border-[#7C3AED] bg-[#7C3AED] text-white"
+                        : "border-[#171717]/15 bg-transparent text-[#625A54] hover:border-[#C08457] hover:text-[#7C3AED]"
                     }`}
                   >
                     {category}
@@ -234,7 +192,7 @@ export function GalleryCatalogue() {
                       activeTriggerRef.current = event.currentTarget;
                       setActiveIndex(index);
                     }}
-                    className={`group relative overflow-hidden rounded-[1.75rem] text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#9a8068] focus-visible:ring-offset-4 ${
+                    className={`group relative overflow-hidden rounded-[1.75rem] border border-[#C08457]/20 bg-[#171717] text-left focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#7C3AED] focus-visible:ring-offset-4 ${
                       featured
                         ? "sm:col-span-2 lg:col-span-7"
                         : "lg:col-span-5"
@@ -242,9 +200,7 @@ export function GalleryCatalogue() {
                   >
                     <div
                       className={`relative overflow-hidden ${
-                        featured
-                          ? "aspect-[16/11]"
-                          : "aspect-[4/5]"
+                        featured ? "aspect-[16/11]" : "aspect-[4/5]"
                       }`}
                     >
                       <Image
@@ -256,24 +212,41 @@ export function GalleryCatalogue() {
                             ? "(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 58vw"
                             : "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 42vw"
                         }
-                        className="object-cover transition-transform duration-700 group-hover:scale-[1.045]"
+                        className="object-cover transition-transform duration-700 group-hover:scale-[1.035]"
                       />
 
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#201914]/45 via-transparent to-transparent opacity-60 transition-opacity duration-500 group-hover:opacity-75" />
+                      <Image
+                        src={item.secondaryImage}
+                        alt=""
+                        aria-hidden="true"
+                        fill
+                        sizes={
+                          featured
+                            ? "(max-width: 640px) 100vw, 58vw"
+                            : "(max-width: 640px) 100vw, 42vw"
+                        }
+                        className="object-cover opacity-0 transition-opacity duration-700 ease-in-out group-hover:opacity-100"
+                      />
+
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#171717]/85 via-[#171717]/5 to-transparent opacity-75 transition-opacity duration-500 group-hover:opacity-90" />
 
                       <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
                         <div className="flex items-end justify-between gap-4 text-white">
                           <div>
-                            <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-white/65">
+                            <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#F5F0E8]/75">
                               {item.category}
                             </p>
 
                             <h3 className="velloria-display mt-2 text-3xl leading-none sm:text-4xl">
                               {item.title}
                             </h3>
+
+                            <p className="mt-3 text-xs font-medium text-[#F5F0E8]/70 transition-colors group-hover:text-[#C08457]">
+                              Hover to explore · Click to view both
+                            </p>
                           </div>
 
-                          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10 backdrop-blur-md transition-all duration-500 group-hover:bg-white group-hover:text-[#33271f]">
+                          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#C08457]/70 bg-[#171717]/30 text-white backdrop-blur-md transition-all duration-300 group-hover:border-[#7C3AED] group-hover:bg-[#7C3AED]">
                             <Maximize2 size={16} strokeWidth={1.5} />
                           </span>
                         </div>
@@ -291,17 +264,17 @@ export function GalleryCatalogue() {
         {activeItem && (
           <motion.div
             ref={dialogRef}
-            className="fixed inset-0 z-[100] flex items-center justify-center bg-[#201914]/95 p-4 sm:p-8"
+            className="fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto bg-[#171717]/95 p-4 sm:p-8"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             role="dialog"
             aria-modal="true"
-            aria-label={`${activeItem.title} gallery image`}
+            aria-label={`${activeItem.title} gallery images`}
             onClick={() => setActiveIndex(null)}
           >
             <motion.div
-              className="relative flex h-full w-full max-w-7xl flex-col items-center justify-center"
+              className="relative flex min-h-full w-full max-w-7xl flex-col items-center justify-center py-12"
               initial={{ scale: 0.96, y: 12 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.96, y: 12 }}
@@ -314,26 +287,44 @@ export function GalleryCatalogue() {
                   type="button"
                   onClick={() => setActiveIndex(null)}
                   aria-label="Close gallery"
-                  className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-md transition-all duration-300 hover:bg-white hover:text-[#33271f]"
+                  className="flex h-11 w-11 items-center justify-center rounded-full border border-[#C08457]/50 bg-white/10 text-white backdrop-blur-md transition-all duration-300 hover:border-[#7C3AED] hover:bg-[#7C3AED]"
                 >
                   <X size={20} strokeWidth={1.5} />
                 </button>
               </div>
 
-              <div className="relative h-[65vh] w-full max-w-5xl overflow-hidden rounded-[1.5rem] sm:h-[72vh]">
-                <Image
-                  src={activeItem.image}
-                  alt={activeItem.title}
-                  fill
-                  sizes="(max-width: 1024px) 95vw, 80vw"
-                  className="object-contain"
-                  priority
-                />
+              <div className="grid w-full max-w-6xl grid-cols-1 gap-4 pt-5 md:grid-cols-2">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-[1.25rem] border border-[#C08457]/40 bg-[#171717]">
+                  <Image
+                    src={activeItem.image}
+                    alt={activeItem.title}
+                    fill
+                    sizes="(max-width: 768px) 95vw, 48vw"
+                    className="object-contain"
+                    priority
+                  />
+                  <span className="absolute bottom-3 left-3 rounded-full bg-[#171717]/75 px-3 py-1 text-[10px] uppercase tracking-[0.15em] text-[#F5F0E8]">
+                    Image one
+                  </span>
+                </div>
+
+                <div className="relative aspect-[4/3] overflow-hidden rounded-[1.25rem] border border-[#7C3AED]/50 bg-[#171717]">
+                  <Image
+                    src={activeItem.secondaryImage}
+                    alt={`${activeItem.title} — second view`}
+                    fill
+                    sizes="(max-width: 768px) 95vw, 48vw"
+                    className="object-contain"
+                  />
+                  <span className="absolute bottom-3 left-3 rounded-full bg-[#171717]/75 px-3 py-1 text-[10px] uppercase tracking-[0.15em] text-[#F5F0E8]">
+                    Image two
+                  </span>
+                </div>
               </div>
 
-              <div className="mt-5 flex w-full max-w-5xl items-end justify-between gap-5 text-white">
+              <div className="mt-6 flex w-full max-w-6xl items-end justify-between gap-5 text-white">
                 <div>
-                  <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-white/50">
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#C08457]">
                     {activeItem.category}
                   </p>
 
@@ -341,17 +332,17 @@ export function GalleryCatalogue() {
                     {activeItem.title}
                   </h3>
 
-                  <p className="mt-2 max-w-xl text-sm leading-6 text-white/60">
+                  <p className="mt-2 max-w-xl text-sm leading-6 text-white/65">
                     {activeItem.description}
                   </p>
                 </div>
 
-                <div className="hidden shrink-0 items-center gap-2 sm:flex">
+                <div className="flex shrink-0 items-center gap-2">
                   <button
                     type="button"
                     onClick={showPrevious}
-                    aria-label="Previous image"
-                    className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white transition-all duration-300 hover:bg-white hover:text-[#33271f]"
+                    aria-label="Previous gallery item"
+                    className="flex h-11 w-11 items-center justify-center rounded-full border border-[#C08457]/50 text-white transition-all duration-300 hover:border-[#7C3AED] hover:bg-[#7C3AED]"
                   >
                     <ArrowLeft size={18} strokeWidth={1.5} />
                   </button>
@@ -359,32 +350,12 @@ export function GalleryCatalogue() {
                   <button
                     type="button"
                     onClick={showNext}
-                    aria-label="Next image"
-                    className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white transition-all duration-300 hover:bg-white hover:text-[#33271f]"
+                    aria-label="Next gallery item"
+                    className="flex h-11 w-11 items-center justify-center rounded-full border border-[#C08457]/50 text-white transition-all duration-300 hover:border-[#7C3AED] hover:bg-[#7C3AED]"
                   >
                     <ArrowRight size={18} strokeWidth={1.5} />
                   </button>
                 </div>
-              </div>
-
-              <div className="mt-4 flex gap-2 sm:hidden">
-                <button
-                  type="button"
-                  onClick={showPrevious}
-                  aria-label="Previous image"
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white"
-                >
-                  <ArrowLeft size={18} strokeWidth={1.5} />
-                </button>
-
-                <button
-                  type="button"
-                  onClick={showNext}
-                  aria-label="Next image"
-                  className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white"
-                >
-                  <ArrowRight size={18} strokeWidth={1.5} />
-                </button>
               </div>
             </motion.div>
           </motion.div>
@@ -393,4 +364,3 @@ export function GalleryCatalogue() {
     </>
   );
 }
-

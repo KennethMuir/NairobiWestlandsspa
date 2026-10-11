@@ -13,15 +13,15 @@ export function GalleryPreview() {
     <section className="velloria-section bg-[var(--velloria-cream)]">
       <Container>
         <SectionHeading
-          eyebrow="Inside Velloria"
+          eyebrow="Inside the spa"
           title={
             <>
-              A softer kind
+              A closer look at
               <br />
-              of beautiful.
+              your next escape.
             </>
           }
-          description="A glimpse into the atmosphere we are creating in the heart of Westlands."
+          description="Explore the spaces, details and atmosphere that shape your experience in Westlands."
         />
 
         <div className="mt-12 grid auto-rows-[10rem] gap-3 md:grid-cols-3 md:auto-rows-[12rem]">

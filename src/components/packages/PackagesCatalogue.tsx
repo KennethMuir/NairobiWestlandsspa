@@ -32,7 +32,7 @@ export function PackagesCatalogue() {
       <Container>
         <div className="mb-12 flex flex-col gap-6 lg:mb-16 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-2xl">
-            <p className="velloria-eyebrow mb-4">The Velloria Collection</p>
+            <p className="velloria-eyebrow mb-4">The our spa Collection</p>
 
             <h2 className="velloria-display text-4xl leading-[0.98] text-[#33271f] sm:text-5xl lg:text-6xl">
               More than a treatment. An entire experience.

@@ -23,7 +23,7 @@ export function ContactEnquiryForm() {
     const phone = String(formData.get("phone") ?? "");
     const message = String(formData.get("message") ?? "");
 
-    const whatsappMessage = `Hello Velloria Westland Spa,
+    const whatsappMessage = `Hello Nairobi Westlands Spa,
 
 I would like to make an enquiry.
 
@@ -62,7 +62,7 @@ Please let me know the next steps.`;
 
         <p className="mt-5 max-w-xl text-sm leading-7 text-white/65 sm:text-base sm:leading-8">
           Your enquiry has been prepared for WhatsApp. Continue the
-          conversation there so the Velloria team can respond directly.
+          conversation there so the our spa team can respond directly.
         </p>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -184,7 +184,7 @@ Please let me know the next steps.`;
       <div className="mt-7 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <p className="max-w-sm text-xs leading-5 text-white/40">
           Your message will open in WhatsApp so you can continue the
-          conversation directly with Velloria.
+          conversation directly with our spa.
         </p>
 
         <button

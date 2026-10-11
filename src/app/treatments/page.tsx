@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/treatments" },
   title: "Massage, Facials & Spa Treatments in Westlands, Nairobi",
   description:
-    "Explore restorative massage, deep tissue massage, facials, body rituals and wellness treatments at Velloria Westland Spa in Westlands, Nairobi.",
+    "Explore restorative massage, deep tissue massage, facials, body rituals and wellness treatments at Nairobi Westlands Spa in Westlands, Nairobi.",
 };
 
 export default function TreatmentsPage() {
@@ -37,7 +37,7 @@ export default function TreatmentsPage() {
             <div className="velloria-container">
               <div className="max-w-4xl">
                 <p className="velloria-eyebrow mb-5 text-[#d9c9b5]">
-                  Velloria Treatments
+                  our spa Treatments
                 </p>
 
                 <h1 className="velloria-display text-5xl leading-[0.94] text-[#fffdf9] sm:text-6xl lg:text-8xl">

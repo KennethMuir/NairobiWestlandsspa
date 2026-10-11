@@ -149,10 +149,9 @@ interior: {
 
 export const pagePhotography = {
   galleryHero: {
-    src: "https://images.unsplash.com/photo-1707906957327-a1ab311942c1?auto=format&fit=crop&w=2200&q=85",
-    alt: "Black woman in a red dress holding a flower",
-  },
-  treatmentsHero: {
+    src: "https://images.pexels.com/photos/32306099/pexels-photo-32306099.jpeg",
+    alt: "Black woman receiving massage therapy",
+  },  treatmentsHero: {
     src: "https://images.unsplash.com/photo-1663117159267-85a5828d7f79?auto=format&fit=crop&w=2200&q=85",
     alt: "Woman with a braid in a close portrait",
   },
@@ -163,28 +162,28 @@ export const pagePhotography = {
 
   home: {
     hero: {
-      src: "https://images.unsplash.com/photo-1779282613646-fd5bce47bb58?auto=format&fit=crop&w=2200&q=85",
-      alt: "Elegant Black woman in a dramatic black dress on wooden steps",
+      src: "https://images.unsplash.com/photo-1745327883290-1e9c6447b938?auto=format&fit=crop&w=2200&q=85",
+      alt: "Calm, prepared spa treatment room",
     },
 massage: {
-      src: "https://images.unsplash.com/photo-1633998979521-11ca9d0e6e38?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
-      alt: "Elegant Black woman in a refined modern indoor setting",
+      src: "https://images.unsplash.com/photo-1696841212541-449ca29397cc?auto=format&fit=crop&w=1800&q=85",
+      alt: "Hot stone massage treatment",
     },
     facial: {
-      src: "https://images.pexels.com/photos/18262726/pexels-photo-18262726.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      alt: "Black woman in a white outfit posing outdoors",
+      src: "https://images.unsplash.com/photo-1677682692989-0e54aa104350?auto=format&fit=crop&w=1800&q=85",
+      alt: "Facial treatment using a skincare device",
     },
     body: {
-      src: "https://images.pexels.com/photos/11189014/pexels-photo-11189014.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      alt: "Black woman in an elegant black dress in a sophisticated interior",
+      src: "https://images.unsplash.com/photo-1728497872660-cc6b16238c3a?auto=format&fit=crop&w=1800&q=85",
+      alt: "Relaxing foot massage treatment",
     },
     package: {
-      src: "https://images.unsplash.com/photo-1640494849448-1285bc8a9afa?q=80&w=726&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      alt: "Black woman in a black blazer photographed in a refined interior",
+      src: "https://images.unsplash.com/photo-1640058883107-09a37906e1f5?auto=format&fit=crop&w=1800&q=85",
+      alt: "Peaceful bathing and relaxation experience",
     },
     interior: {
-      src: "https://images.unsplash.com/photo-1676428197385-ac5bd01e8e45?auto=format&fit=crop&w=1800&q=85",
-      alt: "Black woman standing beside a palm tree in an outdoor portrait",
+      src: "https://images.unsplash.com/photo-1677682692769-e7250eda8a8b?auto=format&fit=crop&w=1800&q=85",
+      alt: "Facial mask skincare treatment",
     },
     detail: {
       src: "https://images.unsplash.com/photo-1780541357773-19eae6cfe237?auto=format&fit=crop&w=1800&q=85",
@@ -210,20 +209,20 @@ massage: {
     },
     homeGallery: {
       reception: {
-        src: "https://images.unsplash.com/photo-1698171975916-23327518cc4a?auto=format&fit=crop&w=1800&q=85",
-        alt: "Black woman posing elegantly beneath a dramatic sky",
+        src: "https://images.unsplash.com/photo-1745327883290-1e9c6447b938?auto=format&fit=crop&w=1800&q=85",
+        alt: "A calm, prepared spa treatment room",
       },
       wellness: {
-        src: "https://images.unsplash.com/photo-1721602328308-2b189b0fc3ed?auto=format&fit=crop&w=1800&q=85",
-        alt: "Black woman with braids looking upward in an outdoor portrait",
+        src: "https://images.unsplash.com/photo-1620733719521-fa0625956f5c?auto=format&fit=crop&w=1800&q=85",
+        alt: "White candles and relaxing aromatherapy details",
       },
       portrait: {
-        src: "https://images.unsplash.com/photo-1657268373500-941f5c8bceb8?auto=format&fit=crop&w=1800&q=85",
-        alt: "Black woman with her hand resting against her face",
+        src: "https://images.unsplash.com/photo-1677682692306-c4f26c4bf66c?auto=format&fit=crop&w=1800&q=85",
+        alt: "A guest receiving a professional beauty treatment",
       },
       quiet: {
-        src: "https://images.unsplash.com/photo-1646526803907-563c03b452fb?auto=format&fit=crop&w=1800&q=85",
-        alt: "Black woman lying on the ground with her eyes closed",
+        src: "https://images.unsplash.com/photo-1640058883107-09a37906e1f5?auto=format&fit=crop&w=1800&q=85",
+        alt: "A peaceful bathing and relaxation experience",
       },
     },
   },
@@ -235,69 +234,69 @@ about: {
   },
 packages: {
     signatureEscape: {
-      src: "https://images.unsplash.com/photo-1640237314131-ded41cdd2207?auto=format&fit=crop&w=1800&q=85",
-      alt: "Black woman in a white dress posing in an elegant portrait",
+      src: "https://images.unsplash.com/photo-1665023022859-973316d08414?auto=format&fit=crop&w=1800&q=85",
+      alt: "Person in a blue suit, portrait photography",
     },
     deepReset: {
-      src: "https://images.unsplash.com/photo-1543616153-6538f6ae50e3?auto=format&fit=crop&w=1800&q=85",
-      alt: "Woman in an orange and black evening dress",
+      src: "https://images.unsplash.com/photo-1660963438875-6e1eed9eef76?auto=format&fit=crop&w=1800&q=85",
+      alt: "Person with curly hair, portrait photography",
     },
     glowAndRestore: {
-      src: "https://images.unsplash.com/photo-1773921637191-a15c8f1d0f92?auto=format&fit=crop&w=1800&q=85",
-      alt: "Black woman sitting peacefully in a grassy field",
+      src: "https://images.unsplash.com/photo-1790863243165-bbacc3f81c7e?auto=format&fit=crop&w=1800&q=85",
+      alt: "Woman with curly hair and a necklace",
     },
     velloriaDayRetreat: {
-      src: "https://images.unsplash.com/photo-1655851632167-282f0c80a360?auto=format&fit=crop&w=1800&q=85",
-      alt: "Black woman in an elegant white dress in an indoor portrait",
+      src: "https://images.unsplash.com/photo-1783445721066-454dc4184878?auto=format&fit=crop&w=1800&q=85",
+      alt: "Woman with afro hair wearing a denim jacket against yellow",
     },
   },
 
   gallery: [
     {
-      src: "https://images.unsplash.com/photo-1752836094974-630711fb07c7?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
-      alt: "Woman posing in the water at dusk",
+      src: "https://images.pexels.com/photos/8312837/pexels-photo-8312837.jpeg?auto=compress&cs=tinysrgb&w=1800",
+      alt: "Black woman receiving massage therapy",
     },
     {
-      src: "https://images.unsplash.com/photo-1725461887383-1a4f24e01d6d?auto=format&fit=crop&w=1800&q=85",
-      alt: "Black woman in a leather jacket photographed in a dramatic portrait",
+      src: "https://images.pexels.com/photos/6187433/pexels-photo-6187433.jpeg?auto=compress&cs=tinysrgb&w=1800",
+      alt: "Black man receiving a massage",
     },
     {
-      src: "https://images.unsplash.com/photo-1748282686295-3bee058d1e99?auto=format&fit=crop&w=1800&q=85",
-      alt: "Stylish woman photographed in a beautiful nighttime setting",
+      src: "https://images.pexels.com/photos/6188119/pexels-photo-6188119.jpeg?auto=compress&cs=tinysrgb&w=1800",
+      alt: "Black male client receiving a leg massage",
     },
     {
-      src: "https://images.unsplash.com/photo-1785405569741-2bee12d70244?auto=format&fit=crop&w=1800&q=85",
-      alt: "Expressive woman in a black hoodie posing for a portrait",
+      src: "https://images.pexels.com/photos/6187425/pexels-photo-6187425.jpeg?auto=compress&cs=tinysrgb&w=1800",
+      alt: "Black man enjoying a massage treatment",
     },
     {
-      src: "https://images.unsplash.com/photo-1643857571074-c4286cbe31c7?auto=format&fit=crop&w=1800&q=85",
-      alt: "Black woman seated outdoors in a black swimsuit",
+      src: "https://images.pexels.com/photos/6621257/pexels-photo-6621257.jpeg?auto=compress&cs=tinysrgb&w=1800",
+      alt: "Black woman enjoying a facial self-care ritual",
     },
     {
-      src: "https://images.unsplash.com/photo-1649633835414-0f260bdce9f8?auto=format&fit=crop&w=1800&q=85",
-      alt: "Woman in an orange dress photographed in an outdoor setting",
+      src: "https://images.pexels.com/photos/6978052/pexels-photo-6978052.jpeg?auto=compress&cs=tinysrgb&w=1800",
+      alt: "Black woman after a skincare treatment",
     },
     {
-      src: "https://images.unsplash.com/photo-1631613682584-75d712ba27d7?auto=format&fit=crop&w=1800&q=85",
-      alt: "Black woman in a black dress seated on a bench",
+      src: "https://images.pexels.com/photos/5659010/pexels-photo-5659010.jpeg?auto=compress&cs=tinysrgb&w=1800",
+      alt: "A facial massage treatment",
     },
     {
-      src: "https://images.unsplash.com/photo-1724514903214-13eee4486c53?auto=format&fit=crop&w=1800&q=85",
-      alt: "Woman standing confidently on a road",
+      src: "https://images.pexels.com/photos/4599399/pexels-photo-4599399.jpeg?auto=compress&cs=tinysrgb&w=1800",
+      alt: "A woman receiving a facial massage",
     },
     {
-      src: "https://images.unsplash.com/photo-1692216161912-bf09498993da?auto=format&fit=crop&w=1800&q=85",
-      alt: "Woman in black trousers and a white shirt",
+      src: "https://images.pexels.com/photos/37240343/pexels-photo-37240343.jpeg?auto=compress&cs=tinysrgb&w=1800",
+      alt: "A facial massage in a spa setting",
     },
     {
-      src: "https://images.unsplash.com/photo-1643857571131-84a60d2f1f36?auto=format&fit=crop&w=1800&q=85",
-      alt: "Black woman in a black dress leaning against a wall",
+      src: "https://images.pexels.com/photos/5793681/pexels-photo-5793681.jpeg?auto=compress&cs=tinysrgb&w=1800",
+      alt: "A guest receiving a professional massage",
     },
   ],
 
   contact: {
     hero: {
-      src: "https://images.unsplash.com/photo-1710972197907-55bb099367fa?auto=format&fit=crop&w=2200&q=85",
+      src: "https://images.unsplash.com/photo-1561444372-9a1cd3ebf2af?auto=format&fit=crop&w=2400&q=85",
       alt: "Black woman in a black dress with her hands on her head",
     },
   },
@@ -345,6 +344,12 @@ packages: {
     hero: SpaPhotography;
   };
 };
+
+
+
+
+
+
 
 
 

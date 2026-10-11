@@ -27,7 +27,7 @@ export const treatmentPreview = [
   {
     number: "02",
     category: "Facial",
-    title: "Velloria Glow",
+    title: "Glow Renewal",
     description:
       "A refined facial ritual combining cleansing, nourishment and gentle touch for beautifully refreshed skin.",
     duration: "60 min",
@@ -67,9 +67,9 @@ export const experienceCards = [
 
 export const packagePreview = {
   eyebrow: "Signature Escape",
-  title: "An afternoon made entirely for you.",
+  title: "Make space for yourself.",
   description:
-    "Step away from the pace of Nairobi and settle into a considered sequence of treatments, refreshments and restorative stillness.",
+    "Take time for yourself with a thoughtful combination of treatments and restorative touches, tailored to the experience you choose.",
   image: homeImages.package,
   inclusions: [
     "Welcome ritual",
@@ -79,47 +79,48 @@ export const packagePreview = {
   ],
 } as const;
 
-export const testimonials = [
-  {
-    quote:
-      "The atmosphere immediately made me slow down. Every detail felt intentional, warm and beautifully considered.",
-    name: "Amina",
-    detail: "Velloria guest",
-  },
-  {
-    quote:
-      "It feels like a little escape in the middle of Westlands. The treatment was exceptional and the whole experience was effortless.",
-    name: "Njeri",
-    detail: "Velloria guest",
-  },
-  {
-    quote:
-      "From the welcome to the final cup of tea, everything felt calm and personal. I left feeling completely renewed.",
-    name: "Wanjiku",
-    detail: "Velloria guest",
-  },
-] as const;
 
 export const galleryItems = [
   {
-    label: "The reception",
+    label: "A calm treatment room",
     image: homeImages.galleryReception,
     className: "md:col-span-2 md:row-span-2",
   },
   {
-    label: "Wellness ritual",
-    image: homeImages.galleryWellness,
+    label: "Hot-stone massage",
+    image: homeImages.massage,
     className: "md:row-span-2",
   },
   {
-    label: "Quiet portrait",
-    image: homeImages.galleryPortrait,
+    label: "Advanced facial care",
+    image: homeImages.facial,
     className: "",
   },
   {
-    label: "A moment to breathe",
+    label: "Restorative foot massage",
+    image: homeImages.body,
+    className: "",
+  },
+  {
+    label: "A soothing facial mask",
+    image: homeImages.interior,
+    className: "md:col-span-2",
+  },
+  {
+    label: "Bathing and stillness",
     image: homeImages.galleryQuiet,
     className: "",
   },
+  {
+    label: "Candles and aromatherapy",
+    image: homeImages.galleryWellness,
+    className: "",
+  },
+  {
+    label: "Personalised beauty care",
+    image: homeImages.galleryPortrait,
+    className: "",
+  },
 ] as const;
+
 

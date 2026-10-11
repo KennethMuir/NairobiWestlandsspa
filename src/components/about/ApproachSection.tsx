@@ -43,7 +43,7 @@ export function ApproachSection() {
           <div className="relative min-h-[26rem] overflow-hidden rounded-[2rem] bg-[#33271f] p-8 text-white sm:min-h-[34rem] sm:p-10">
             <div className="flex h-full flex-col justify-between">
               <p className="text-xs uppercase tracking-[0.16em] text-[#d9c9b5]">
-                The Velloria way
+                Our approach
               </p>
 
               <div>

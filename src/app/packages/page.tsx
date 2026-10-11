@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/packages" },
   title: "Spa Packages & Day Retreats in Westlands, Nairobi",
   description:
-    "Explore spa packages, wellness journeys, beauty rituals and day retreat experiences at Velloria Westland Spa in Westlands, Nairobi.",
+    "Explore spa packages, wellness journeys, beauty rituals and day retreat experiences at Nairobi Westlands Spa in Westlands, Nairobi.",
 };
 
 export default function PackagesPage() {
@@ -37,7 +37,7 @@ export default function PackagesPage() {
             <div className="velloria-container">
               <div className="max-w-4xl">
                 <p className="velloria-eyebrow mb-5 text-[#d9c9b5]">
-                  Velloria Packages
+                  our spa Packages
                 </p>
 
                 <h1 className="velloria-display text-5xl leading-[0.94] text-[#fffdf9] sm:text-6xl lg:text-8xl">

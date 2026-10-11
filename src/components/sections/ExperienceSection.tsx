@@ -10,15 +10,15 @@ export function ExperienceSection() {
     <section className="velloria-section bg-[var(--velloria-cream)]">
       <Container>
         <SectionHeading
-          eyebrow="The Velloria Experience"
+          eyebrow="A More Personal Spa Experience"
           title={
             <>
-              Space to breathe.
+              Care that meets you
               <br />
-              Time to restore.
+              where you are.
             </>
           }
-          description="We are creating a modern wellness destination where thoughtful treatments, beautiful surroundings and unhurried service come together."
+          description="From restorative massage to skin-renewing rituals, every experience begins with you — your comfort, your needs and how you want to feel."
         />
 
         <div className="mt-12 grid gap-px overflow-hidden rounded-[2rem] border border-[var(--velloria-border)] bg-[var(--velloria-border)] md:grid-cols-3">

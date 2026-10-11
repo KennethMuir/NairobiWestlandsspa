@@ -40,7 +40,7 @@ export async function generateMetadata({
   return {
     alternates: { canonical: `/treatments/${treatment.slug}` },
     title: `${treatment.title} in Westlands, Nairobi`,
-    description: `${treatment.shortDescription} Experience ${treatment.title.toLowerCase()} at Velloria Westland Spa in Westlands, Nairobi.`,
+    description: `${treatment.shortDescription} Experience ${treatment.title.toLowerCase()} at our spa Westland Spa in Westlands, Nairobi.`,
   };
 }
 

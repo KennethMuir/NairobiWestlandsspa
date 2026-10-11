@@ -6,18 +6,20 @@ import { Footer } from "@/components/layout/Footer";
 import { BookingForm } from "@/components/booking/BookingForm";
 import { getBookingSelection } from "@/data/booking";
 import { siteConfig } from "@/data/site";
+import { teamMembers } from "@/data/team";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/book" },
   title: "Book Your Visit",
   description:
-    "Make a booking enquiry with Velloria Westland Spa in Westlands, Nairobi.",
+    "Make a booking enquiry with Nairobi Westlands Spa in Westlands, Nairobi.",
 };
 
 type BookingPageProps = {
   searchParams: Promise<{
     type?: string;
     slug?: string;
+    expert?: string;
   }>;
 };
 
@@ -26,13 +28,23 @@ export default async function BookingPage({
 }: BookingPageProps) {
   const params = await searchParams;
   const selection = getBookingSelection(params.type, params.slug);
+  const expert = teamMembers.find((member) => member.slug === params.expert);
 
   return (
     <>
       <Header />
 
       <main className="bg-[#f8f5ef]">
-        <section className="relative overflow-hidden bg-[#201914] pt-32 text-white sm:pt-36">
+        <section
+          className="relative overflow-hidden bg-[#201914] bg-cover bg-center pt-32 text-white sm:pt-36"
+          style={
+            expert?.image
+              ? {
+                  backgroundImage: `linear-gradient(rgba(32, 25, 20, 0.72), rgba(32, 25, 20, 0.82)), url("${expert.image}")`,
+                }
+              : undefined
+          }
+        >
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(154,128,104,0.22),transparent_38%)]" />
 
           <div className="velloria-container relative pb-16 sm:pb-20 lg:pb-24">
@@ -95,4 +107,5 @@ export default async function BookingPage({
     </>
   );
 }
+
 

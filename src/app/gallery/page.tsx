@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/gallery" },
   title: "Spa Gallery & Wellness Experience in Westlands, Nairobi",
   description:
-    "Explore the spa atmosphere, treatments, rituals and wellness experience at Velloria Westland Spa on Stima Lane, Westlands, Nairobi.",
+    "Explore the atmosphere, treatments, rituals and wellness experience at Nairobi Westlands Spa on Stima Lane, Westlands, Nairobi.",
 };
 
 export default function GalleryPage() {
@@ -40,7 +40,7 @@ export default function GalleryPage() {
             <div className="flex min-h-[62vh] flex-col justify-end pb-16 sm:pb-20 lg:min-h-[68vh] lg:pb-24">
               <div className="max-w-5xl">
                 <p className="velloria-eyebrow text-[#d9c9b5]">
-                  The Velloria gallery
+                  The spa gallery
                 </p>
 
                 <h1 className="velloria-display mt-5 max-w-4xl text-6xl leading-[0.88] sm:text-7xl lg:text-[7rem]">
@@ -48,7 +48,7 @@ export default function GalleryPage() {
                 </h1>
 
                 <p className="mt-8 max-w-2xl text-sm leading-7 text-white/70 sm:text-base sm:leading-8">
-                  Step inside the visual world of Velloria — warm textures,
+                  Step inside the visual world of our spa — warm textures,
                   restorative rituals and moments designed to invite you to
                   slow down.
                 </p>
@@ -69,7 +69,7 @@ export default function GalleryPage() {
             <div className="grid gap-12 lg:grid-cols-[1fr_0.8fr] lg:items-end">
               <div>
                 <p className="velloria-eyebrow text-[#d9c9b5]">
-                  Your time at Velloria
+                  Your time with us
                 </p>
 
                 <h2 className="velloria-display mt-5 max-w-3xl text-5xl leading-[0.92] sm:text-6xl lg:text-7xl">
@@ -78,7 +78,7 @@ export default function GalleryPage() {
 
                 <p className="mt-7 max-w-2xl text-sm leading-7 text-white/65 sm:text-base sm:leading-8">
                   Ready to step away from the pace of the city? Plan your
-                  visit to Velloria Westland Spa on Stima Lane, Westlands.
+                  visit to our spa Westland Spa on Stima Lane, Westlands.
                 </p>
               </div>
 

@@ -33,15 +33,24 @@ export function VisitSection() {
             </a>
 
             <h2 className="velloria-display mt-5 text-5xl leading-[0.95] sm:text-6xl md:text-7xl">
-              Your time is worth
-              <br />
-              slowing down for.
+              Your comfort comes first.
             </h2>
 
             <p className="mt-6 max-w-xl text-sm leading-7 text-white/70 sm:text-base">
-              Ready to make space for yourself? Reach out and let us help you
-              find the treatment or ritual that feels right.
+              Visit us in Westlands or enquire about a treatment at your preferred
+              location. Mobile appointments depend on treatment, location and
+              availability.
             </p>
+
+            <div className="mt-7 rounded-2xl border border-white/15 bg-white/5 p-5 sm:p-6">
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-white/60">
+                Mobile appointments
+              </p>
+              <p className="mt-3 text-sm leading-6 text-white/80">
+                Enquire about a treatment at your preferred location. Mobile appointments
+                depend on the treatment, location and availability.
+              </p>
+            </div>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Button href="/contact">
@@ -57,3 +66,4 @@ export function VisitSection() {
     </section>
   );
 }
+

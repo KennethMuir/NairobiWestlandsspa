@@ -42,16 +42,16 @@ export function HeroSection() {
           </p>
 
           <h1 className="velloria-display mt-5 max-w-4xl text-[4.2rem] font-medium leading-[0.84] tracking-tight sm:text-7xl md:text-8xl lg:text-[7.5rem]">
-            Come back
+            Your moment.
             <br />
             <span className="italic text-[var(--velloria-sand)]">
-              to yourself.
+              Your kind of care.
             </span>
           </h1>
 
           <p className="mt-7 max-w-xl text-sm leading-7 text-white/70 sm:text-base">
-            A considered space for restorative treatments, quiet indulgence
-            and the simple luxury of slowing down.
+            Thoughtfully chosen treatments, attentive hands and a little room to breathe
+            — right here in Westlands.
           </p>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -60,7 +60,7 @@ export function HeroSection() {
               <ArrowUpRight size={16} className="text-[#ffffff]" />
             </Button>
 
-            <WhatsAppButton label="WhatsApp Velloria" />
+            <WhatsAppButton label="WhatsApp us" />
           </div>
         </motion.div>
 
@@ -71,7 +71,7 @@ export function HeroSection() {
           className="mt-16 flex items-center gap-3 text-xs uppercase tracking-[0.18em] text-white/50"
         >
           <ArrowDown size={15} />
-          Discover Velloria
+          Discover the spa
         </motion.div>
       </Container>
     </section>

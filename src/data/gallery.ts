@@ -1,11 +1,10 @@
-import { pagePhotography } from "@/data/photography";
-
 export type GalleryItem = {
   id: string;
   title: string;
   category: string;
   description: string;
   image: string;
+  secondaryImage: string;
   featured?: boolean;
 };
 
@@ -14,83 +13,107 @@ export const galleryItems = [
     id: "gallery-01",
     title: "A moment to exhale",
     category: "The Space",
-    description:
-      "A quiet visual introduction to the considered atmosphere of Velloria.",
-    image: pagePhotography.gallery[0].src,
+    description: "A welcoming portrait of rest, comfort and considered care.",
+    image: "https://images.pexels.com/photos/19641835/pexels-photo-19641835.jpeg",
+    secondaryImage: "https://images.unsplash.com/photo-1609535904959-aaa9d01fb5a4?auto=format&fit=crop&w=1800&q=85",
     featured: true,
   },
   {
     id: "gallery-02",
-    title: "Restorative stillness",
-    category: "Wellness",
-    description:
-      "Soft textures and warm tones create space for a slower rhythm.",
-    image: pagePhotography.gallery[1].src,
+    title: "The bathing ritual",
+    category: "Rituals",
+    description: "A bathing ritual inspired by warmth, softness and stillness.",
+    image: "https://images.unsplash.com/photo-1643543142710-35a0fc8056e6?auto=format&fit=crop&w=1800&q=85",
+    secondaryImage: "https://images.unsplash.com/photo-1643543162426-c3d8d948fe43?auto=format&fit=crop&w=1800&q=85",
   },
   {
     id: "gallery-03",
-    title: "The treatment ritual",
+    title: "Restorative touch",
     category: "Treatments",
-    description:
-      "A glimpse into the tactile world of massage and restorative care.",
-    image: pagePhotography.gallery[2].src,
+    description: "A closer look at the hands and skill behind restorative treatments.",
+    image: "https://images.unsplash.com/photo-1757689314932-bec6e9c39e51?auto=format&fit=crop&w=1800&q=85",
+    secondaryImage: "https://images.unsplash.com/photo-1752071368979-e26605337768?auto=format&fit=crop&w=1800&q=85",
   },
   {
     id: "gallery-04",
     title: "Skin in focus",
     category: "Beauty",
-    description:
-      "A considered moment inspired by Velloria's facial rituals.",
-    image: pagePhotography.gallery[3].src,
+    description: "A gentle approach to skincare, facial rituals and renewal.",
+    image: "https://images.unsplash.com/photo-1775642548902-2f60a0aa1405?auto=format&fit=crop&w=1800&q=85",
+    secondaryImage: "https://images.unsplash.com/photo-1659533984606-0aa0dc68bad0?auto=format&fit=crop&w=1800&q=85",
   },
   {
     id: "gallery-05",
-    title: "Warm touch",
-    category: "Rituals",
-    description:
-      "Natural textures and gentle warmth evoke the slower side of wellness.",
-    image: pagePhotography.gallery[4].src,
+    title: "The massage ritual",
+    category: "Treatments",
+    description: "Thoughtful touch and unhurried techniques invite the body to relax.",
+    image: "https://images.pexels.com/photos/6188118/pexels-photo-6188118.jpeg",
+    secondaryImage: "https://images.unsplash.com/photo-1757689373248-a6cd07328ba5?auto=format&fit=crop&w=1800&q=85",
   },
   {
     id: "gallery-06",
     title: "A softer pace",
-    category: "The Space",
-    description:
-      "An atmosphere designed to help the outside world feel a little further away.",
-    image: pagePhotography.gallery[5].src,
+    category: "Wellness",
+    description: "A quiet invitation to slow down and return to yourself.",
+    image: "https://images.pexels.com/photos/9718373/pexels-photo-9718373.jpeg",
+    secondaryImage: "https://images.pexels.com/photos/19185962/pexels-photo-19185962.jpeg",
   },
   {
     id: "gallery-07",
-    title: "Restore and renew",
-    category: "Wellness",
-    description:
-      "A visual expression of the restorative philosophy behind the Velloria experience.",
-    image: pagePhotography.gallery[6].src,
+    title: "A moment of calm",
+    category: "The Space",
+    description: "Simple details help make room for a more peaceful experience.",
+    image: "https://images.unsplash.com/photo-1700996386804-e3c24222c8ff?auto=format&fit=crop&w=1800&q=85",
+    secondaryImage: "https://images.unsplash.com/photo-1759216852861-b42c58f20766?auto=format&fit=crop&w=1800&q=85",
   },
   {
     id: "gallery-08",
-    title: "The details matter",
-    category: "Rituals",
-    description:
-      "Small sensory details become part of a more intentional visit.",
-    image: pagePhotography.gallery[7].src,
+    title: "Come back to yourself",
+    category: "Wellness",
+    description: "A restorative pause for the body, mind and senses.",
+    image: "https://images.pexels.com/photos/19641806/pexels-photo-19641806.jpeg",
+    secondaryImage: "https://images.pexels.com/photos/33340473/pexels-photo-33340473.jpeg",
+    featured: true,
   },
   {
     id: "gallery-09",
-    title: "A quiet glow",
-    category: "Beauty",
-    description:
-      "A serene visual inspired by the feeling of emerging refreshed.",
-    image: pagePhotography.gallery[8].src,
+    title: "Warmth and stillness",
+    category: "Rituals",
+    description: "Sauna-inspired warmth and quiet moments of personal care.",
+    image: "https://images.unsplash.com/photo-1702312721607-6749725ac0be?auto=format&fit=crop&w=1800&q=85",
+    secondaryImage: "https://images.unsplash.com/photo-1582295525215-cacf275639d8?auto=format&fit=crop&w=1800&q=85",
   },
   {
     id: "gallery-10",
-    title: "Come back to yourself",
+    title: "A considered touch",
+    category: "Treatments",
+    description: "A restorative treatment shaped by skilled, attentive hands.",
+    image: "https://images.pexels.com/photos/19641837/pexels-photo-19641837.jpeg",
+    secondaryImage: "https://images.unsplash.com/photo-1696841212541-449ca29397cc?auto=format&fit=crop&w=1800&q=85",
+  },
+  {
+    id: "gallery-11",
+    title: "The art of unwinding",
+    category: "Wellness",
+    description: "An unhurried experience built around comfort and restoration.",
+    image: "https://images.pexels.com/photos/3881089/pexels-photo-3881089.jpeg",
+    secondaryImage: "https://images.unsplash.com/photo-1677682692998-7db8c3245bc9?auto=format&fit=crop&w=1800&q=85",
+  },
+  {
+    id: "gallery-12",
+    title: "Small sensory details",
+    category: "Beauty",
+    description: "The finishing details that make a self-care ritual feel special.",
+    image: "https://images.pexels.com/photos/19695951/pexels-photo-19695951.jpeg",
+    secondaryImage: "https://images.unsplash.com/photo-1659534010108-9ec8607e9819?auto=format&fit=crop&w=1800&q=85",
+  },
+  {
+    id: "gallery-13",
+    title: "A final moment of peace",
     category: "The Space",
-    description:
-      "A final invitation to slow down, settle in and make the moment yours.",
-    image: pagePhotography.gallery[9].src,
-    featured: true,
+    description: "An invitation to leave the rush behind and settle into the moment.",
+    image: "https://images.pexels.com/photos/37719629/pexels-photo-37719629.jpeg",
+    secondaryImage: "https://images.unsplash.com/photo-1790244331027-6e66ac2fa953?auto=format&fit=crop&w=1800&q=85",
   },
 ] satisfies GalleryItem[];
 
@@ -102,6 +125,4 @@ export const galleryCategories = [
   "Beauty",
   "Rituals",
 ] as const;
-
-
 

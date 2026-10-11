@@ -9,14 +9,13 @@ import { ContactInformation } from "@/components/contact/ContactInformation";
 import { Button } from "@/components/ui/Button";
 import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import { contactPage } from "@/data/contact";
-import { homeImages } from "@/data/home";
 import { siteConfig } from "@/data/site";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/contact" },
-  title: "Contact Velloria Westland Spa in Westlands, Nairobi",
+  title: "Contact Nairobi Westlands Spa in Westlands, Nairobi",
   description:
-    "Find Velloria Westland Spa on Stima Lane in Westlands, Nairobi. Contact us about massage, facials, spa treatments, packages and wellness experiences.",
+    "Find Nairobi Westlands Spa on Stima Lane in Westlands, Nairobi. Contact us about massage, facials, spa treatments, packages and wellness experiences.",
 };
 
 export default function ContactPage() {
@@ -48,8 +47,8 @@ export default function ContactPage() {
                 <div className="mt-8 overflow-hidden rounded-[1.75rem]">
                   <div className="relative aspect-[4/3]">
                     <Image
-                      src={homeImages.detail}
-                      alt="Velloria treatment atmosphere"
+                      src="https://images.pexels.com/photos/37229283/pexels-photo-37229283.jpeg"
+                      alt="our spa treatment atmosphere"
                       fill
                       sizes="(max-width: 1024px) 100vw, 35vw"
                       className="object-cover"
@@ -86,7 +85,7 @@ export default function ContactPage() {
                   <ArrowUpRight size={16} strokeWidth={1.7} />
                 </Button>
 
-                <WhatsAppButton label="WhatsApp Velloria" />
+                <WhatsAppButton label="WhatsApp us" />
               </div>
             </div>
 
@@ -109,5 +108,6 @@ export default function ContactPage() {
     </>
   );
 }
+
 
 
